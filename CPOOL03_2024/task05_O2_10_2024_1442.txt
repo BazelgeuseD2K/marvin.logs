@@ -1,0 +1,18 @@
+====================
+ task01
+====================
+
+# Building...
+~/.> gcc -fno-builtin -W -Wall -o my_print_alpha test_files/my_putchar.c test_files/day03/task01.c *.c
+/bin/ld: /tmp/cclBWoBS.o: in function `my_putchar':
+my_isneg.c:(.text+0x0): multiple definition of `my_putchar'; /tmp/cc0f7arI.o:my_putchar.c:(.text+0x0): first defined here
+/bin/ld: /tmp/ccs8hzQ4.o: in function `my_putchar':
+my_print_alpha.c:(.text+0x0): multiple definition of `my_putchar'; /tmp/cc0f7arI.o:my_putchar.c:(.text+0x0): first defined here
+/bin/ld: /tmp/ccOz9pt2.o: in function `my_putchar':
+my_print_digits.c:(.text+0x0): multiple definition of `my_putchar'; /tmp/cc0f7arI.o:my_putchar.c:(.text+0x0): first defined here
+/bin/ld: /tmp/ccj3vAoQ.o: in function `my_putchar':
+my_print_revalpha.c:(.text+0x0): multiple definition of `my_putchar'; /tmp/cc0f7arI.o:my_putchar.c:(.text+0x0): first defined here
+collect2: error: ld returned 1 exit status
+# Build failed.
+
+task01: FAILURE
